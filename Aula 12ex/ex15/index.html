@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex15</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+            <!--O input tem que ficar dentro do parágrafo, assim eles ficarão na mesma linha dentro do site-->
+            <p> Ano de Nascimento:
+                <input type="number" id="txtano" min="0">
+            </p>
+            <p>Sexo:
+                <!--com a tag label, é possível selecionar o radio clicando em cima do nome e não apenas em cima da bolinha-->
+                <input type="radio" name="radsex" id="mas">
+                <label for="mas">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+                <!--todos o radios precisam ter o mesmo name, caso o contrário, dois poderão estar selecionados ao mesmo tempo-->
+            </p>
+            <p>
+                <input type="button" value="verificar" id="" onclick="verificar()">
+            </p>
+        </div>
+        <div id="res">
+            <p>Preencha os campos acima para ver o resultado!</p>
+        </div>
+    </section>
+    <footer>
+        <p>CursoemVídeo</p>
+    </footer>
+    <script src="blabla.js"></script>
+</body>
+</html>
