@@ -1,3 +1,6 @@
+
+
+
 function verificar(){
     var data = new Date 
     var anoatual = data.getFullYear()
@@ -11,11 +14,14 @@ function verificar(){
         var idade = anoatual - txt
         var radsex = document.getElementsByName('radsex')
         var gênero =''
+        //document.body.style.backgroundColor = 'red'
     
         if ( radsex[0].checked ){
             gênero = 'homem'
+            //document.body.style.backgroundColor = 'red'
         } else if (radsex[1].checked){
             gênero ='mulher'
+            //document.body.style.backgroundColor = 'red'
             
         }
         res.innerHTML = (`Detectamos ${gênero} de ${idade} anos`)
