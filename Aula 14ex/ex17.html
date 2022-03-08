@@ -34,9 +34,13 @@ footer{
     <section>
         <div>
             <p>Número: <input id="txt" type="number"> 
-                <input type="button" value="Contar" onclick="contar()">
+                <input type="button" value="Contar" onclick="tabuada()">
             </p> 
-            <p class="resposta"></p>
+            <select name="" id="tabela">
+                
+            </select>
+            <p id="resposta"></p>
+            
         </div>
         <div>
             
@@ -47,7 +51,21 @@ footer{
     </footer>
 
     <script>
-       
+       function tabuada(){
+            var txt = Number(document.querySelector('input#txt').value)
+            var tab = document.querySelector('select#tabela')
+            tab.innerHTML = ''
+            if ( txt == 0){
+                window.alert('Por favor, digite um número!')
+            } else {
+                for(let c = 1;c <= 10; c++){
+                    var t = txt * c
+                var option = document.createElement('option')
+                option.text = `${txt} x ${c} = ${t}`
+                tab.appendChild(option)
+            }
+           }
+        }
     </script>
 </body>
 </html>
