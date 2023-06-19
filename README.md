@@ -1,2 +1,2 @@
 # Curso em vídeo JS ecmascript
- exercícios feitos durante o curso
+ Exercícios feitos durante o curso de Java Script da plataforma Curso em vídeo.
